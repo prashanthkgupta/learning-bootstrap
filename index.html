@@ -6,31 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+          integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+
+    <style>
+        .gDiv {
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        .myDiv {
+            width: 200px;
+            height: 300px;
+            padding: 20px;
+            margin: 20px 10px;
+            display: inline-block;
+            color: white;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        .myRow {
+            height: 100px;
+            width: 100%;
+        }
+
+
+        @media (min-width: 576px) {
+            body {
+                background: cyan
+            }
+        }
+
+        @media (min-width: 768px) {
+            body {
+                background: blue;
+            }
+        }
+
+        @media (min-width: 992px) {
+            body {
+                background: green;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                background: pink;
+            }
+        }
+
+        @media (max-width: 575px) {
+            body {
+                background: yellow;
+            }
+        }
+
+
+    </style>
 </head>
 <body>
-<h1>Hello, world!</h1>
-<div class="container">
-    <h1>Hello World !</h1>
-    <p class="alert-danger">This is the Hello world Program</p>
-    <p>This is the Hello world Program</p>
-    <p>
-        This is the Hello world Program. This is the Hello world Program. This is the Hello world Program. This is the
-        Hello world Program. This is the Hello world Program. This is the Hello world Program.
-        This is the Hello world Program. This is the Hello world Program. This is the Hello world Program. This is the
-        Hello world Program. This is the Hello world Program. This is the Hello world Program.
-        This is the Hello world Program. This is the Hello world Program. This is the Hello world Program. This is the
-        Hello world Program. This is the Hello world Program. This is the Hello world Program. This is the Hello world
-        Program
-        This is the Hello world Program. This is the Hello world Program. This is the Hello world Program. This is the
-        Hello world Program. This is the Hello world Program. This is the Hello world Program. This is the Hello world
-        Program.
-    </p>
+
+<!--<h1>Other Features</h1>
+<hr>
+<hr>
+<div>
+
+</div>-->
+
+<h1>Bootstrap Alignment and Offset</h1>
+<hr>
+<hr>
+<div class="container" style="margin-top: 20px">
+    <div class="row">
+        <div class="col"></div>
+    </div>
 </div>
+<h1 class="text-center display-3 my-2">Grid System</h1>
+<hr>
+<hr>
+<div>
+    <section class="container">
+        <section class="row bg-secondary">
+            <div class="gDiv col-sm-10 col-xs-3 col-md-1 col-lg-10 col-xl-12">
+                <p>asa</p>
+            </div>
+        </section>
+    </section>
+</div>
+<h1 class="text-center display-3 my-2">Media Break Points</h1>
+<hr>
+<hr>
+<div>
+</div>
+
+<h1>Container and Rows</h1>
+<hr>
+<hr>
+<div>
+    <div class="bg-primary"
+         style="height: 200px; width: 100%; background: url('img/wall.jpg') no-repeat center center;background-size: cover;">
+        <h2>Normal Div</h2></div>
+    <hr>
+    <div class="container">
+        <div class="bg-primary"
+             style="height: 200px; width: 100%; background: url('img/wall.jpg') no-repeat center center;background-size: cover;">
+            <h2>Container Div</h2></div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="bg-primary"
+             style="height: 200px; width: 100%; background: url('img/wall.jpg') no-repeat center center; background-size: cover;">
+            <h2>Container-Fluid Div</h2></div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col myRow bg-success">Row Column 1</div>
+            <div class="col myRow bg-warning">Row Column 2</div>
+            <div class="col myRow bg-danger">Row Column 3</div>
+        </div>
+        <div class="row">
+            <div class="col myRow bg-primary">Row Column 1</div>
+            <div class="col myRow bg-secondary">Row Column 2</div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<div style="background-color: #5a6268">
+    <h1>Background Color</h1>
+    <hr>
+    <hr>
+    <div class="myDiv bg-primary">Hello bg-primary</div>
+    <div class="myDiv bg-secondary">Hello bg-secondary</div>
+    <div class="myDiv bg-success">Hello bg-success</div>
+    <div class="myDiv bg-danger">Hello bg-danger</div>
+    <div class="myDiv bg-warning">Hello bg-warning</div>
+
+    <hr>
+    <div class="myDiv bg-white text-dark">
+        <p>Hello bg-white</p>
+    </div>
+    <div class="myDiv bg-transparent text-dark">Hello bg-transparent</div>
+    <div class="myDiv bg-info">Hello bg-info</div>
+    <div class="myDiv bg-light text-dark">Hello bg-light</div>
+    <div class="myDiv bg-dark">Hello bg-dark</div>
+
+    <hr>
+    <div class="myDiv" id="red">Hello Bootstrap</div>
+    <div class="myDiv" id="green">Hello Bootstrap</div>
+    <hr>
+</div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script>
 </body>
 </html>
